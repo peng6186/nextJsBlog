@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next/types";
 import React from "react";
-
+export const metadata: Metadata = {
+  title: "XU-SDE/Portfolio",
+  description: "Portfolio page",
+};
 const Portfolio = () => {
   return (
     <div className="mt-5">

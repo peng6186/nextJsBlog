@@ -1,8 +1,17 @@
 "use client";
+import { log } from "console";
+import { Metadata } from "next";
+import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
-
+const metadata: Metadata = {
+  title: "XU-SDE/Dashboard",
+  description: "Dashboard",
+};
 const DashBoard = () => {
+  // const session = useSession();
+  // console.log(session);
+
   const fetcher = (url: any) => fetch(url).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",

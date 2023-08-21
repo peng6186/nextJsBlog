@@ -6,14 +6,14 @@ const DarkModeToggle = () => {
   return (
     <div
       onClick={toggle}
-      className="cursor-pointer flex items-center border relative rounded-lg w-[42px]  justify-between  px-1"
+      className="cursor-pointer flex items-center border relative rounded-lg w-[46px]  gap-1 justify-between  px-1 "
     >
       <div>🔆</div>
       <div>🌙</div>
       <div
         className={`${
           mode === "light" ? " left-1" : "right-1"
-        } absolute w-[15px] h-[15px] rounded-full bg-emerald-300`}
+        } absolute w-[18px] h-[18px] rounded-full bg-emerald-300`}
       />
     </div>
   );

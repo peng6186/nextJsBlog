@@ -1,5 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import { Metadata } from "next/types";
+export const metadata: Metadata = {
+  title: "XU-SDE/Contact",
+  description: "Contact Page",
+};
 const Contact = () => {
   return (
     <div className="flex flex-col p-4">
